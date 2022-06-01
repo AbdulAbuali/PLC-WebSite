@@ -1,0 +1,146 @@
+*, *::before, *::after	{
+	-webkit-box-sizing : border-box;
+	-moz-box-sizing : border-box;
+	box-sizing : border-box;
+}
+	
+body {
+	font-family: Tahoma,Geneva, sans-serif;
+	font-size: 1em;
+	line-height: 200%;
+	margin: 0%;
+}
+
+/*Header*/
+header h1 {
+	font-family: "Courier New";
+	line-height: 150%;
+	margin: 0%;
+	padding: 1%;
+	color: #666699;
+	font-size:4em;
+	font-weight:bold;
+	text-align: center;
+	height:auto;
+	max-width:100%;
+}
+
+header a{
+	text-decoration: none;
+}
+
+header.headerImage {
+	background: url("../images/header.jpg") 100% 100%;
+	height:auto;
+	max-width:100%;
+}
+
+
+/*Navigate*/
+ul.topnav {
+list-style-type: none;
+background-color: #333; /* black */
+padding: 2%;}
+ul.topnav li a {
+display: block; /*convert inline element ‘a’ to block element*/
+color: #f2f2f2; /*white grey*/
+text-decoration: none;}
+ul.topnav li a:hover
+{background-color: #111;} /*black*/
+
+ul.topnav li.hide
+{display:none ; }
+/* The class ‘responsive’ is added via jquery when the user clicks
+on the burger menu icon via the toggle() javascript method. The
+javascript toggle() method toggles between hide() and show() for
+the selected element. */
+ul.topnav.responsive li{display:block;} /*class added via jQuery*/
+
+
+}
+/*Content*/
+
+main#pageBody{
+	max-width: 800px;
+	margin: auto;
+}
+
+article {
+	background-color: #68bdff;
+}
+article div {
+	display: block;
+	padding: 0.5%;
+	margin: 0.5%;
+	background: #ace3ef;
+	line-height: 150%;
+}
+article div h1, article div p{
+	padding: 1%;
+}
+article div img{
+	border:3px solid #68bdff;
+	max-width: 40%;
+	float: left;
+}
+
+/*Side Bar*/
+aside {
+	background: #68bdff;
+}
+aside div {
+	display: block;
+	padding: 1%;
+	margin: 0.5%;
+	background: #ace3ef;
+	line-height: 150%;
+}
+
+aside div h1, aside div p{
+	padding: 1%;
+}
+
+/*Footer*/
+footer {
+	padding: 0.5%;
+	font-weight:bold;
+	background-color: #839bc1;
+	text-align: center;
+}
+
+/*Media Queries*/
+@media screen and (min-width: 600px)
+{
+	body{
+		
+	}
+	body.bgimage	{
+		background-image: url("../images/background.jpg");
+	}
+	
+	ul.topnav li a {
+display:inline-block; /*overwriting the display:block property*/
+padding: 16px 20px;
+}
+ul.topnav li.hide{
+display:inline-block; } /* overwriting the display:none property*/
+ul.topnav.responsive li{
+display:inline-block; } /* overwriting the display property that is
+applied via the jQuery toggle() method */
+ul.topnav li.icon {display:none;} /*Add a new selector to hide
+} the burger menu*/
+
+	
+	article {
+		width: 70%;
+		float: left;
+	}
+	
+	aside {
+		width: 30%;
+		float: left;
+	}
+	
+	footer {
+		clear: both;
+	}

@@ -1,0 +1,166 @@
+*, *::before, *::after	{
+	-webkit-box-sizing : border-box;
+	-moz-box-sizing : border-box;
+	box-sizing : border-box;
+	text-decoration: none;
+}
+	
+body {
+	font-family: Tahoma,Geneva, sans-serif;
+	font-size: 1em;
+	line-height: 200%;
+	margin: 0%;
+}
+
+/*Header*/
+header h1 {
+	font-family: "Courier New";
+	line-height: 150%;
+	margin: 0%;
+	padding: 1%;
+	color: #666699;
+	font-size:4em;
+	font-weight:bold;
+	text-align: center;
+	height:auto;
+	max-width:100%;
+}
+
+
+header.headerImage {
+	background: url("../images/header.jpg") 100% 100%;
+	height:auto;
+	max-width:100%;
+}
+
+
+/*Navigate*/
+nav ul { 
+	margin: 0%;
+	padding: 1%;
+	list-style-type: none;
+	background-color: #b8c7e0;
+}
+
+nav li a {
+	text-align: center;
+	display: block;
+	color: black;
+	font-weight: bold;
+}
+
+nav a:hover {
+	color: gray;
+}
+
+/*Content*/
+
+main#pageBody{
+	max-width: 800px;
+	margin: auto;
+}
+
+section {
+	display: block;
+	background: #ace3ef;
+	line-height: 150%;
+}
+section img{
+	border:3px solid #68bdff;
+	max-width: 100%;
+}
+
+article {
+	background-color: #68bdff;
+}
+article div {
+	display: block;
+	padding: 0.5%;
+	margin: 0.5%;
+	background: #ace3ef;
+	line-height: 150%;
+}
+article div h1{
+	font-size: 1.2em;
+}
+article div h1, article div p{
+	padding: 1%;
+	clear: both;
+}
+article div img{
+	border:3px solid #68bdff;
+	float: left;
+	width: 200px;
+	height: 120px;
+	clear: both;
+}
+
+/*Side Bar*/
+aside {
+	background: #68bdff;
+}
+aside div {
+	display: block;
+	padding: 1%;
+	margin: 0.5%;
+	background: #ace3ef;
+	line-height: 150%;
+}
+
+aside h1, aside p{
+	padding: 1%;
+	clear: both;
+	
+}
+aside img{
+	border:3px solid #68bdff;
+	width: 70px;
+	float: left;
+	height: 70px;
+}
+
+aside div figure {
+	clear: both;
+}
+
+/*Footer*/
+footer {
+	padding: 0.5%;
+	font-weight:bold;
+	background-color: #839bc1;
+	text-align: center;
+}
+
+/*Media Queries*/
+@media screen and (min-width: 600px)
+{
+	body{
+		
+	}
+	body.bgimage	{
+		background-image: url("../images/background.jpg");
+	}
+	
+	nav li {
+		display: inline-block;
+		width: 19%;
+	}
+	
+	section {
+		width: 70%;
+		float: left;
+	}
+	
+	article {
+		width: 70%;
+		float: left;
+	}
+	
+	aside {
+		width: 30%;
+		float: left;
+	}
+	
+	footer {
+		clear: both;
+	}
